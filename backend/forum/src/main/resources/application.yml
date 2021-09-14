@@ -1,0 +1,31 @@
+jwt:
+  secret: '[a-zA-Z0-9._]^+$Guidelines89797985forAlphabeticalArraNumeralsandOtherSymbo$'
+
+server:
+  port: 8080
+#  error:
+#    whitelabel:
+#      enabled: false
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/myforum
+    username: <username>
+    password: <password>
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  mail:
+    host: smtp.mailtrap.io
+    port: 2525
+    username: <username>
+    password: <password>
+    protocol: smtp
